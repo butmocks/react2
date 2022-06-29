@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile {
+  background-color: #86b0bb;
+  margin: auto;
+  padding: 8px;
+  border-radius: 14px;
+  border: 3px solid #3a3535;
+}
+
+.profile__name {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.profile__birth {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=index.css.map */
