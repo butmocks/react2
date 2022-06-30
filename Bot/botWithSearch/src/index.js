@@ -2,27 +2,27 @@
 // const fs = require('fs');
 // let filepath = path.join(__dirname, 'Diamond.py');
 
-var fs = require("fs");
-import { readFile } from "fs";
+// var fs = require("fs");
+// import { readFile } from "fs";
 
-readFile(filepath, (error, data) => {
-  if (error) {
-    console.error("Error" + error);
-  } else {
-    console.log("Data Found is : ")
-    console.log(data)
-    console.log("Data Found of type : ")
-    console.log(typeof data)
+// readFile(filepath, (error, data) => {
+//   if (error) {
+//     console.error("Error" + error);
+//   } else {
+//     console.log("Data Found is : ")
+//     console.log(data)
+//     console.log("Data Found of type : ")
+//     console.log(typeof data)
 
-  }
-})
+//   }
+// })
 
 
 //----------------------------------
-// fs.readFile('./myconfig.json', 'utf8', function (err, data) {
-//   myconfig = JSON.parse(data.toString('utf8').replace(/^\uFEFF/, ''));
-// });
-// // note: data is an instance of Buffer
+fs.readFile('./Diamond.py', 'utf8', function (err, data) {
+  myconfig = JSON.parse(data.toString('utf8').replace(/^\uFEFF/, ''));
+});
+// note: data is an instance of Buffer
 //-----------------------------------
 
 // function removeBom(input) {
