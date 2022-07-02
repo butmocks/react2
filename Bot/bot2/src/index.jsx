@@ -1,11 +1,77 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import './index.scss';
+// import Search from './Search.jsx';
+import { readFileSync, readFile } from 'fs';
+import { readFile } from "fs";
+import * as fs from 'fs';
+
+fs.copy('/Diamond.jsx', '/mynewfile.jsx')
+  .then(() => console.log('success!'))
+  .catch(err => console.error(err))
+
+
+
+
+
+// const path = require('path');
+// const fs = require('fs');
+
+// Diamond.prototype.all = function () {
+//   console.log(this.props)
+// }
+
+// console.log(fs.readFile('./Diamond.py', 'utf8', function (err, data) {
+//   myconfig = JSON.parse(data.toString('utf8').replace(/^\uFEFF/, ''));
+// }));
+console.log(a)
+
+// let Diamond = props => {
+//   console.log(props);
+// }
+const rootElement = document.querySelector('#root');
+
+ReactDOM.render(<Diamond />, rootElement);
+
+
+
+
+// import * as React from "react";
+// import Diamond from './Diamond.jsx'
+
+// const obj = [
+//   <Diamond />
+// ]
+// console.log(obj)
+
+
+// const transformToObject = Diamond => {
+//   // put your code here
+//   let obj = {};
+
+//   Diamond.forEach(elem => {
+//   obj[elem] = elem;
+//   });
+
+//   return obj;
+// };
+
+
+// export const setItem = (key, value) => {
+//   localStorage.setItem(key, JSON.stringify(value));
+// };
+
+// export const getItem = (key) => JSON.parse(localStorage.getItem(key));
+
+
 // const path = require('path');
 // const fs = require('fs');
 // let filepath = path.join(__dirname, 'Diamond.py');
 
-// const fs = require("fs");
+// var fs = require("fs");
 // import { readFile } from "fs";
 
-// readFile(filepath, (error, data) => {
+//const readFile(filepath, (error, data) => {
 //   if (error) {
 //     console.error("Error" + error);
 //   } else {
@@ -18,12 +84,12 @@
 // })
 
 
-//----------------------------------
-fs.readFile('./Diamond.py', 'utf8', function (err, data) {
-  myconfig = JSON.parse(data.toString('utf8').replace(/^\uFEFF/, ''));
-});
-// note: data is an instance of Buffer
-//-----------------------------------
+// //----------------------------------
+// fs.readFile('./Diamond.py', 'utf8', function (err, data) {
+//   myconfig = JSON.parse(data.toString('utf8').replace(/^\uFEFF/, ''));
+// });
+// // note: data is an instance of Buffer
+// //-----------------------------------
 
 // function removeBom(input) {
 //   // All alternatives found on https://en.wikipedia.org/wiki/Byte_order_mark
@@ -63,9 +129,6 @@ fs.readFile('./Diamond.py', 'utf8', function (err, data) {
 // });
 
 
-
-// // import { readFileSync, promises as fsPromises } from 'fs'
-// // const { readFileSync, promises: fsPromises } = require('fs')
 // // let baseUrl = ('https://github.com/butmocks/react2/blob/main/Bot/botWithSearch/Diamond.py')
 
 // let fs = ('./Diamond.py')
@@ -119,20 +182,4 @@ fs.readFile('./Diamond.py', 'utf8', function (err, data) {
 // });
 
 // console.log("Program Ended");
-
-
-
-
-
-
-
-
-// readFile(FILE_LOCATION, function (err, data) {
-//   if (err) throw err;
-//   if (data.includes('search string')) {
-//     console.log(data)
-//   }
-// });
-
-
 
