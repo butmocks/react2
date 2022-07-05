@@ -1,7 +1,7 @@
 import newLocal from '../src/App';
 const fs = newLocal;
 // First I want to read the file
-fs.readFile('./Index.html', function read(err, data) {
+fs.readFile('./Diamond/py', function read(err, data) {
   if (err) {
     throw err;
   }
