@@ -4,7 +4,7 @@ import React from 'react';
 const BuyParams = () => {
   return (
     <div className="page__content">
-      <h1>Buy Params</h1>
+      <h3>Buy Params</h3>
 
       <ul>
         <li>Buy fast key</li>
