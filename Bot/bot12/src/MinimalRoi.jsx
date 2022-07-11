@@ -1,10 +1,11 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
+// import * as ReactDOMClient from 'react-dom/client';
 
 const MinimalRoi = () => {
   return (
     <div className="page__content">
-      <h1>Minimal Roi</h1>
+      <h2>Minimal Roi</h2>
       <ul>
               <li>Buy fast key</li>
       <li>Buy horizontal push</li>

@@ -1,10 +1,12 @@
 import React from 'react';
+// import { Picker } from 'react-native';
+
 // import { Link } from 'react-router-dom';
 
 const Sellparams = () => {
   return (
     <div className="page__content">
-      <h1>Sell Params</h1>
+      <h2>Sell Params</h2>
 
       <ul>
         <li>Sell fast key</li>

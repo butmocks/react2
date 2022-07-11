@@ -4,7 +4,7 @@ import React from 'react';
 const Timeframe = () => {
   return (
     <div className="page__content">
-      <h1>Timeframe</h1>
+      <h2>Timeframe</h2>
       <h3>Timeframe value 5m</h3>
       <ul>
         <li></li>

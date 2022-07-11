@@ -2,18 +2,31 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import SellParams from './SellParams.jsx';
 import MinimalRoi from './MinimalRoi.jsx';
-import PageNotFound from './PageNotFound.jsx';
+// import PageNotFound from './PageNotFound.jsx';
 import BuyParams from './BuyParams.jsx';
 import StopLoss from './StopLoss.jsx'
 import TrailingStop from './TrailingStop.jsx';
 import Timeframe from './Timeframe.jsx';
 import SetDefault from './SetDefault.jsx';
+// import BuyFastKey from './BuyFastKey.jsx';
+
+// import * as ReactDOMClient from 'react-dom/client';
+
+// import * as ReactDOMClient from 'react-dom/client';
+
+
+
+
 
 const App = () => {
+
   return (
+
     <div className="page">
+      
       <ul>
         <BuyParams />
+
         <SellParams />
         <MinimalRoi />
         <StopLoss />
@@ -39,6 +52,7 @@ const App = () => {
         </Switch>
       </BrowserRouter> */}
     </div>
+  
   );
 };
 

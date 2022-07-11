@@ -4,7 +4,7 @@ import React from 'react';
 const TrailingStop = () => {
   return (
     <div className="page__content">
-      <h1>Trailling Stop</h1>
+      <h2>Trailling Stop</h2>
 
       <ul>
         <li>Trailling Stop true</li>
