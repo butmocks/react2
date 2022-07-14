@@ -1,0 +1,69 @@
+{
+  "menus": {
+    "en-US": {
+      "*": [
+        {
+          "path": "/",
+          "title": "rc-slider",
+          "meta": {}
+        },
+        {
+          "path": "/changelog",
+          "title": "Changelog",
+          "meta": {}
+        },
+        {
+          "title": "Demo",
+          "path": "/demo",
+          "meta": {},
+          "children": [
+            {
+              "path": "/demo/debug",
+              "title": "debug",
+              "meta": {}
+            },
+            {
+              "path": "/demo/handle",
+              "title": "handle",
+              "meta": {}
+            },
+            {
+              "path": "/demo/marks",
+              "title": "marks",
+              "meta": {}
+            },
+            {
+              "path": "/demo/range",
+              "title": "range",
+              "meta": {}
+            },
+            {
+              "path": "/demo/slider",
+              "title": "slider",
+              "meta": {}
+            },
+            {
+              "path": "/demo/vertical",
+              "title": "vertical",
+              "meta": {}
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {},
+  "title": "rc-slider",
+  "mode": "doc",
+  "repository": {
+    "url": "https://github.com/react-component/slider",
+    "branch": "master"
+  },
+  "theme": {}
+}
