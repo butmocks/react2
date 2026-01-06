@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Мини 2048 — карты</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div>
+                    <h1 class="title">Мини 2048</h1>
+                    <div class="subtitle">Объединяй одинаковые “карты”, заполни прогресс, собери достижения.</div>
+                </div>
+
+                <div class="hud">
+                    <div class="stat">
+                        <div class="statLabel">Счёт</div>
+                        <div class="statValue" id="score">0</div>
+                    </div>
+                    <div class="stat">
+                        <div class="statLabel">Лучший</div>
+                        <div class="statValue" id="bestScore">0</div>
+                    </div>
+                    <div class="stat">
+                        <div class="statLabel">Макс. карта</div>
+                        <div class="statValue" id="maxTile">2</div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="controls">
+                <div class="progress">
+                    <div class="progressTop">
+                        <div class="progressLabel">Прогресс до 2048</div>
+                        <div class="progressValue" id="progressText">0%</div>
+                    </div>
+                    <div class="progressBar" aria-hidden="true">
+                        <div class="progressFill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn" id="newGameBtn" type="button">Новая игра</button>
+                    <button class="btn btnSecondary" id="continueBtn" type="button" title="После победы можно продолжить">
+                        Продолжить
+                    </button>
+                    <button class="btn btnSecondary" id="helpBtn" type="button">Помощь</button>
+                </div>
+            </section>
+
+            <main class="main">
+                <div class="boardWrap">
+                    <div class="boardHeader">
+                        <div class="boardHint">Управление: стрелки / WASD / свайп</div>
+                        <div class="badges" id="badges"></div>
+                    </div>
+
+                    <div class="board" id="board" role="application" aria-label="Игровое поле 2048">
+                        <div class="overlay hidden" id="overlay">
+                            <div class="overlayCard">
+                                <div class="overlayTitle" id="overlayTitle">Победа!</div>
+                                <div class="overlayText" id="overlayText">Ты собрал карту 2048.</div>
+                                <div class="overlayActions">
+                                    <button class="btn" id="overlayNewGameBtn" type="button">Новая игра</button>
+                                    <button class="btn btnSecondary" id="overlayContinueBtn" type="button">Продолжить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cells" id="cells" aria-hidden="true"></div>
+                        <div class="tiles" id="tiles" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <aside class="side">
+                    <div class="panel">
+                        <div class="panelTitle">Достижения</div>
+                        <div class="achievements" id="achievements"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="panelTitle">Состояние</div>
+                        <div class="smallText">
+                            Игра сохраняется автоматически. Чтобы начать заново — “Новая игра”.
+                        </div>
+                        <div class="smallText">
+                            Цель: собрать 2048 (или продолжай дальше для рекордов).
+                        </div>
+                    </div>
+                </aside>
+            </main>
+        </div>
+
+        <dialog class="dialog" id="helpDialog">
+            <div class="dialogHeader">
+                <div class="dialogTitle">Как играть</div>
+                <button class="iconBtn" id="closeHelpBtn" type="button" aria-label="Закрыть">✕</button>
+            </div>
+            <div class="dialogBody">
+                <ul class="list">
+                    <li><b>Двигай</b> карты стрелками / WASD или свайпом.</li>
+                    <li><b>Одинаковые</b> карты при столкновении объединяются в одну (один раз за ход).</li>
+                    <li><b>После хода</b> появляется новая карта (2 или 4).</li>
+                    <li><b>Победа</b> — когда появится 2048.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <script src="./game.js"></script>
+    </body>
+</html>
